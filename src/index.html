@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简历</title>
+    <style>
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+        *{
+            box-sizing: border-box;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        body{
+            background: #eee;
+            margin: 20px 0;
+        }
+        .wrapper{
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+            display: flex;
+        }
+        .aside{
+            background: #ececec;
+            
+        }
+        .aside .name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .aside .name::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 14px solid #d6d6d6;
+            border-bottom: 14px solid transparent;
+            border-right: 100px solid #d6d6d6;
+            border-left: 100px solid transparent;
+        }
+        .aside .information li{
+            border-bottom: 1px solid #d6d6d6;
+            margin-left: -18px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            
+        }  
+        .aside .information li svg{
+            margin-right: 10px;
+            color: #7bbaaa;
+        }
+        .aside .skills {
+            background: #7BBAAA;
+            color: #fff;
+            margin: 25px 5px;
+            padding: 12px 5px;
+        }
+        .aside .skills dt{
+            margin: 0 10px;
+        }
+        .aside .skills dd{
+            height: 4px;
+            background: #74c5b5;
+            margin: 10px 6px;
+            border-radius: 2px;
+        }
+        .aside .skills .mastery{
+           display: block;
+            height: 4px;
+            background: #fff;
+            border-radius: 2px;
+        }
+        .aside .others h3{
+            margin: 20px;
+        }
+        .aside .others li{
+            border-bottom: 1px solid #d6d6d6;
+            margin-left: -18px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            
+        }  
+        .aside .others li svg{
+            margin-right: 10px;
+            color: #7bbaaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="aside">
+                <div class="name">
+                    <h2>李国铭</h2>
+                    <p>应聘前端工程师</p>
+                </div>
+                
+                <div class="information">
+                    <ul>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-edu"></use>
+                        </svg>本科</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-shengri"></use>
+                        </svg>1997.11</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>13609026329</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg>1079811936</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-email"></use>
+                        </svg>1079811936@qq.com</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>我的技能</h3>
+                    <dl>
+                        <dt>JavaScript/HTML5/CSS3</dt>
+                        <dd><span class="mastery" style="width: 80%;"></span></dd>
+                        <dt>Vue/Vuex/Vue-router</dt>
+                        <dd><span class="mastery" style="width: 80%;"></span></dd>
+                        <dt>Node.js</dt>
+                        <dd><span class="mastery" style="width: 70%;"></span></dd>
+                        <dt>Webpack/Parcel/Npm Script</dt>
+                        <dd><span class="mastery" style="width: 80%;"></span></dd>
+                        <dt>ES6/SCSS</dt>
+                        <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    </dl>
+                </div>
+                <div class="others">
+                    <h3>了解更多</h3>
+                    <ul>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-github"></use>
+                        </svg><a href="https://www.baidu.com/" target="_blank">GitHub</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-blog"></use>
+                        </svg><a href="https://www.baidu.com/" target="_blank">博客</li>
+                        <li><svg class="icon" >
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>13609026329</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="content">
+            <h1>项目经历</h1>
+            <div class="pigui">
+                vue3造轮子
+            </div>
+            <div class="morney">
+                记账
+            </div>
+            <h1>开源项目</h1>
+            <div class="pikachu">
+                皮卡丘
+            </div>
+            <div class="nav">
+                前端导航
+            </div>
+            <div class="canvas">
+                简易画板
+            </div>
+            <h1>关于我</h1>
+            <h1>个人经历</h1>
+        </div>
+    </div>
+    <script src="//at.alicdn.com/t/font_2765017_4cafwtmetdf.js"></script>
+ <script src="./main.js"></script>
+</body>
+</html>
