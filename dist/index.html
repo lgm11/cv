@@ -130,6 +130,17 @@
         .content li{
             font-size: 13px;
             line-height: 1.5em;
+        }
+        .show a{
+            margin: 0 3px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: white;
+            background: #7BBAAA;
+            border: none;
+            
+            /* box-shadow: 0 1px 0 fade-out(black, 0.95); */
         }</style>
 </head>
 <body>
@@ -189,7 +200,13 @@
         <div class="content">
             <h2>项目经历</h2>
             <div class="pigui">
-                <h4>Pig-UI库</h4>
+                <div class="show">
+                    Pig-UI库
+                    <a href="https://lgm11.github.io/pig-ui-website/index.html" target="_blank">演示</a>
+                    <a href="https://github.com/lgm11/pig-ui" target="_blank">源码</a>
+                </div>
+                <br>
+                <img src="/pig.2faa2342.png" style="max-width: 100%;max-height: 100%;">
                 <section>
                 Pig-UI是一个使用Vue实现的小型UI框架，提供一些常用组件、适合桌面端使用。<br>
                 组件包括：开关按钮、Button按钮、弹窗对话框、选项卡<br><br>
@@ -204,30 +221,45 @@
                 所以自己设计了一款快速记账页面，该项目的特点是一键快速记账，包含标签管理、记账历史、数据可视等功能<br>
                 该项目我分别使用了Vue和React来做，用不同的技术实现了类似的功能<br>
                 </section>
-                <h5>Vue-version</h5>
+                <div class="show">
+                    <h5>Vue-version</h5>
+                    <a href="https://lgm11.github.io/money-website/" target="_blank">演示</a>
+                    <a href="https://github.com/lgm11/money" target="_blank">源码</a>
+                </div>
+                <br>
                 <section>
                     本项目使用Vue-router划分为三个分页面：记账、标签、统计。实现了复杂信息保存、标签管理、数据统计展示等主要功能。使用Vuex+LocalStorage实现状态管理，记录所有对记账的增删改查，使用day.js实现时间管理<br><br>
                     <strong>技术栈：</strong> Vue2 + TypeScript + Vue Cli4 + Vue Router3 + SVG + Echart + SCSS<br>
                 </section>
-                <h5>React-version</h5>
+                <div class="show">
+                    <h5>React-version</h5>
+                    <a href="https://lgm11.github.io/morney-react-website/index.html" target="_blank">演示</a>
+                    <a href="https://github.com/lgm11/morney-react" target="_blank">源码</a>
+                </div>
+                
 
             </div>
             <h2>开源项目</h2>
             <div class="pikachu">
-                <div>
-                <h4>可爱皮卡丘-纯CSS绘制皮卡丘</h4>
-                <a href="https://lgm11.github.io/pikachu-static/src/index.html" target="_blank">演示1</a>
-                <a href="https://lgm11.github.io/pikachu-dynamic/dist/index.html" target="_blank">演示2</a>
+                <div class="show">
+                    <div>
+                        可爱皮卡丘-纯CSS绘制皮卡丘
+                        <a href="https://lgm11.github.io/pikachu-static/src/index.html" target="_blank">演示</a>
+                        <a href="https://lgm11.github.io/pikachu-dynamic/dist/index.html" target="_blank">演示</a>
+                    </div>
                 </div>
-                
                 <section>
+                    <br>
                     使用伪元素、CSS Animation、绝对、相对定位的项目
                 </section>
-                
-                
             </div>
             <div class="canvas">
-                <h4>简易画板</h4>
+                <div class="show">
+                    <h4>简易画板</h4>
+                    <a href="https://lgm11.github.io/canvas-demo-1/index.html" target="_blank">演示</a>
+                    <a href="https://github.com/lgm11/canvas-demo-1" target="_blank">源码</a>
+                </div>
+                
                 <section>
                     使用HTML5的Canvas标签，实现的画板项目，对移动端进行兼容。能在桌面端和移动端使用<br><br>
                     <strong>技术栈：</strong>
