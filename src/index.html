@@ -116,12 +116,13 @@
         }
         .content{
             padding-left: 20px;
+            color: #424650;
         }
         .content h4{
             margin-left: 10px;
         }
         .content h5{
-            margin-left: 15px;
+            margin-left: 35px;
         }
         .content section{
             font-size: 12px;
@@ -148,6 +149,18 @@
             margin-right: 15px;
             justify-content: space-between;
             align-items: center;
+        }
+        .content .img{
+            display: flex;
+            justify-content: center;
+        }
+        .content p{
+            color:#666666 ;
+            line-height: 1.8;
+        }
+        .content span{
+            /* color: #147059; */
+            color: #f60;
         }
     </style>
 </head>
@@ -182,15 +195,15 @@
                 <h3>我的技能</h3>
                 <dl>
                     <dt>JavaScript/HTML5/CSS3</dt>
-                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dd><span class="mastery" style="width: 85%;"></span></dd>
                     <dt>Vue/Vuex/Vue-router</dt>
-                    <dd><span class="mastery" style="width: 80%;"></span></dd>
-                    <dt>Node.js</dt>
-                    <dd><span class="mastery" style="width: 70%;"></span></dd>
-                    <dt>Webpack/Parcel/Npm Script</dt>
-                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dd><span class="mastery" style="width: 75%;"></span></dd>
+                    <dt>React</dt>
+                    <dd><span class="mastery" style="width: 60%;"></span></dd>
+                    <dt>Webpack/Parcel/Git</dt>
+                    <dd><span class="mastery" style="width: 75%;"></span></dd>
                     <dt>ES6/SCSS</dt>
-                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dd><span class="mastery" style="width: 90%;"></span></dd>
                 </dl>
             </div>
             <div class="others">
@@ -215,23 +228,34 @@
                         <a href="https://github.com/lgm11/pig-ui" target="_blank">源码</a>
                     </div>
                 </div>
-                <img src="./image/pig.png" style="max-width: 100%;max-height: 100%;">
+                <div class="img">
+                    <img src="./image/pig.png" style="max-width: 80%;max-height: 80%;">
+                </div><br>
                 <section>
-                Pig-UI是一个使用Vue实现的小型UI框架，提供一些常用组件、适合桌面端使用。<br>
-                组件包括：开关按钮、Button按钮、弹窗对话框、选项卡<br><br>
-                <strong>技术栈：</strong> Vue3+Vite+Vue Router+TypeScript
+                
+                <p><strong>项目描述：</strong>
+                Pig-UI是一个使用 <span>Vue3</span> 实现的小型UI框架，提供一些常用组件、适合桌面端使用。<br>
+                    组件包括：开关按钮、Button按钮、弹窗对话框、选项卡。所以组件使用 <span>Vue + TypeScript</span> 装饰器来实现，有更好的类型支持。统一打包，发布 <span>npm</span> ，流程化。
+                </p>
+                <p>
+                    <strong>技术栈：</strong>Vue3+Vite+Vue Router+TypeScript
+                </p>
                 </section> 
-            </div><br><br>
+            </div><br>
             <div class="morney">
                 <h4>豆瓣记账</h4>
                 <br>
-                <img src="./image/morney.png" alt="" style="max-width: 100%;max-height: 100%;">
-                <br><br>
+                <div class="img">
+                    <img src="./image/morney.png" alt="" style="max-width: 80%;max-height: 80%;">
+                </div>
+                <br>
 
                 <section>
-                    日常生活中，总想把开销记下来，手机自带的备忘录功能不齐全，记账软件又太多广告，功能臃肿<br>
-                所以自己设计了一款快速记账页面，该项目的特点是一键快速记账，包含标签管理、记账历史、数据可视等功能<br>
-                该项目我分别使用了Vue和React来做，用不同的技术实现了类似的功能<br>
+                    <p>
+                        <strong>项目描述：</strong>日常生活中，总想把开销记下来，手机自带的备忘录功能不齐全，记账软件又太多广告，功能臃肿。
+                所以自己设计了一款快速记账页面，该项目的特点是一键快速记账，包含标签管理、记账历史、数据可视等功能。
+                该项目我分别使用了 <span>Vue</span> 和 <span>React</span> 来做，用不同的技术实现了类似的功能。
+                    </p>
                 </section>
                 <div class="show">
                     <h5>Vue-version</h5>
@@ -240,10 +264,11 @@
                         <a href="https://github.com/lgm11/money" target="_blank">源码</a>
                     </div>
                 </div>
-                <br>
                 <section>
-                    本项目使用Vue-router划分为三个分页面：记账、标签、统计。实现了复杂信息保存、标签管理、数据统计展示等主要功能。使用Vuex+LocalStorage实现状态管理，记录所有对记账的增删改查，使用day.js实现时间管理<br><br>
-                    <strong>技术栈：</strong> Vue2 + TypeScript + Vue Cli4 + Vue Router3 + SVG + Echart + SCSS<br>
+                    <p>
+                        本项目使用Vue-router划分为三个分页面：记账、标签、统计。实现了复杂信息保存、标签管理、数据统计展示等主要功能。使用 <span>Vue Router</span> 实现路由跳转。使用 <span>Vuex+LocalStorage</span> 实现状态管理，记录所有对记账的增删改查，使用 <span>day.js</span> 实现时间管理。
+                    </p>
+                    <p><strong>技术栈：</strong> Vue2 + TypeScript + Vue Cli4 + Vue Router3 + SVG + Echart + SCSS</p>
                 </section>
                 <div class="show">
                     <h5>React-version</h5>
@@ -269,27 +294,14 @@
                     </div>
                 </div>
                 <br>
-                <img src="./image/pikachu.png" alt="" style="max-width: 100%;max-height: 100%;">
+                <div class="img">
+                    <img src="./image/pikachu.png" alt="" style="max-width: 80%;max-height: 80%;">
+                </div>
                 <section>
                     <br>
-                    
-                    纯CSS绘制皮卡丘：使用伪元素、CSS Animation、绝对、相对定位的项目
-                </section>
-            </div><br><br>
-            <div class="canvas">
-                <div class="show">
-                    <h4>简易画板</h4>
-                    <div class="link">
-                        <a href="https://lgm11.github.io/canvas-demo-1/index.html" target="_blank">演示</a>
-                        <a href="https://github.com/lgm11/canvas-demo-1" target="_blank">源码</a>
-                    </div>
-                </div>
-                <br>
-                <img src="./image/canvas.png" alt="" style="max-width: 100%;max-height: 100%;">
-                <section>
-                    使用HTML5的Canvas标签，实现的画板项目，对移动端进行兼容。能在桌面端和移动端使用<br><br>
-                    <strong>技术栈：</strong>
-                JavaScript + HTML5 + Canvas + CSS3
+                    <p>
+                        <strong>项目描述：</strong>静态版使用纯CSS绘制皮卡丘：使用flex布局、伪元素、CSS Animation、绝对、相对定位的项目。动态版是一个使用原生JS开发，动态显示CSS画一个皮卡丘过程的小作品。主要思路是通过计时器遍历预先设置在preview标签内的代码，将其逐个显示在页面上，并在style标签上作同样处理，以使CSS生效。
+                    </p>
                 </section>
             </div><br><br>
             <div class="nav">
@@ -301,14 +313,40 @@
                     </div>
                 </div>
                 <br>
-                <img src="./image/nav.png" alt="" style="max-width: 100%;max-height: 100%;">
+                <div class="img">
+                    <img src="./image/nav.png" alt="" style="max-width: 80%;max-height: 80%;">
+                </div><br>
                 <section>
-                    项目使用原生JavaScript，实现可自定义的导航网站
-                <br><br>
-                <strong>技术栈：</strong>
-                JavaScript + HTML5 + LocalStorage
+                    <p>
+                        <strong>项目描述：</strong>项目使用原生JavaScript，实现一个可自定义的导航网站，集成添加以及删除标签功能。同时加入百度搜索功能，加深了对浏览器Store的理解。
+                    </p>
+                <p>
+                    <strong>技术栈：</strong>
+                    JavaScript + HTML5 + LocalStorage +CSS3
+                </p>
                 </section>
-                
+            </div><br>
+            <div class="canvas">
+                <div class="show">
+                    <h4>简易画板</h4>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/canvas-demo-1/index.html" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/canvas-demo-1" target="_blank">源码</a>
+                    </div>
+                </div>
+                <br>
+                <div class="img">
+                    <img src="./image/canvas.png" alt="" style="max-width: 80%;max-height: 80%;">
+                </div>
+                <section>
+                    <p>
+                        <strong>项目描述：</strong>使用HTML5的Canvas标签，实现的画板项目，对移动端进行兼容。能在桌面端和移动端使用
+                    </p>
+                    <p>
+                        <strong>技术栈：</strong>
+                    JavaScript + HTML5 + Canvas + CSS3
+                    </p>
+                </section>
             </div><br>
             <h2>关于我</h2>
             <ul>
