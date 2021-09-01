@@ -133,7 +133,7 @@
             line-height: 1.5em;
         }
         .show a{
-            margin: 0 3px;
+            margin: 0 8px;
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 13px;
@@ -143,81 +143,91 @@
             
             /* box-shadow: 0 1px 0 fade-out(black, 0.95); */
         }
+        .content .show{
+            display: flex;
+            margin-right: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="aside">
-                <div class="name">
-                    <h2>李国铭</h2>
-                    <p>应聘前端工程师</p>
-                </div>
-                
-                <div class="information">
-                    <ul>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-edu"></use>
-                        </svg>本科</li>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-shengri"></use>
-                        </svg>1997.11</li>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-phone"></use>
-                        </svg>13609026329</li>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-weixin"></use>
-                        </svg>1079811936</li>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-email"></use>
-                        </svg>1079811936@qq.com</li>
-                    </ul>
-                </div>
-                <div class="skills">
-                    <h3>我的技能</h3>
-                    <dl>
-                        <dt>JavaScript/HTML5/CSS3</dt>
-                        <dd><span class="mastery" style="width: 80%;"></span></dd>
-                        <dt>Vue/Vuex/Vue-router</dt>
-                        <dd><span class="mastery" style="width: 80%;"></span></dd>
-                        <dt>Node.js</dt>
-                        <dd><span class="mastery" style="width: 70%;"></span></dd>
-                        <dt>Webpack/Parcel/Npm Script</dt>
-                        <dd><span class="mastery" style="width: 80%;"></span></dd>
-                        <dt>ES6/SCSS</dt>
-                        <dd><span class="mastery" style="width: 80%;"></span></dd>
-                    </dl>
-                </div>
-                <div class="others">
-                    <h4>了解更多</h4>
-                    <ul>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-github"></use>
-                        </svg><a href="https://www.baidu.com/" target="_blank">GitHub</li>
-                        <li><svg class="icon" >
-                            <use xlink:href="#icon-blog"></use>
-                        </svg><a href="https://www.baidu.com/" target="_blank">博客</li>
-                    </ul>
-                </div>
+            <div class="name">
+                <h2>李国铭</h2>
+                <p>应聘前端工程师</p>
             </div>
+                
+            <div class="information">
+                <ul>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-edu"></use>
+                    </svg>本科</li>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-shengri"></use>
+                    </svg>1997.11</li>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>13609026329</li>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>1079811936</li>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-email"></use>
+                    </svg>1079811936@qq.com</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>我的技能</h3>
+                <dl>
+                    <dt>JavaScript/HTML5/CSS3</dt>
+                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dt>Vue/Vuex/Vue-router</dt>
+                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dt>Node.js</dt>
+                    <dd><span class="mastery" style="width: 70%;"></span></dd>
+                    <dt>Webpack/Parcel/Npm Script</dt>
+                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dt>ES6/SCSS</dt>
+                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                </dl>
+            </div>
+            <div class="others">
+                <h4>了解更多</h4>
+                <ul>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-github"></use>
+                    </svg><a href="https://www.baidu.com/" target="_blank">GitHub</li>
+                    <li><svg class="icon" >
+                        <use xlink:href="#icon-blog"></use>
+                    </svg><a href="https://www.baidu.com/" target="_blank">博客</li>
+                </ul>
+            </div>
+        </div>
         <div class="content">
             <h2>项目经历</h2>
             <div class="pigui">
                 <div class="show">
-                    Pig-UI库
-                    <a href="https://lgm11.github.io/pig-ui-website/index.html" target="_blank">演示</a>
-                    <a href="https://github.com/lgm11/pig-ui" target="_blank">源码</a>
+                    <h4>Pig-UI库</h4>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/pig-ui-website/index.html" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/pig-ui" target="_blank">源码</a>
+                    </div>
                 </div>
-                <br>
                 <img src="./image/pig.png" style="max-width: 100%;max-height: 100%;">
                 <section>
                 Pig-UI是一个使用Vue实现的小型UI框架，提供一些常用组件、适合桌面端使用。<br>
                 组件包括：开关按钮、Button按钮、弹窗对话框、选项卡<br><br>
                 <strong>技术栈：</strong> Vue3+Vite+Vue Router+TypeScript
                 </section> 
-                
-            </div>
+            </div><br><br>
             <div class="morney">
                 <h4>豆瓣记账</h4>
+                <br>
+                <img src="./image/morney.png" alt="" style="max-width: 100%;max-height: 100%;">
+                <br><br>
+
                 <section>
                     日常生活中，总想把开销记下来，手机自带的备忘录功能不齐全，记账软件又太多广告，功能臃肿<br>
                 所以自己设计了一款快速记账页面，该项目的特点是一键快速记账，包含标签管理、记账历史、数据可视等功能<br>
@@ -225,8 +235,10 @@
                 </section>
                 <div class="show">
                     <h5>Vue-version</h5>
-                    <a href="https://lgm11.github.io/money-website/" target="_blank">演示</a>
-                    <a href="https://github.com/lgm11/money" target="_blank">源码</a>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/money-website/" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/money" target="_blank">源码</a>
+                    </div>
                 </div>
                 <br>
                 <section>
@@ -235,41 +247,61 @@
                 </section>
                 <div class="show">
                     <h5>React-version</h5>
-                    <a href="https://lgm11.github.io/morney-react-website/index.html" target="_blank">演示</a>
-                    <a href="https://github.com/lgm11/morney-react" target="_blank">源码</a>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/morney-react-website/index.html" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/morney-react" target="_blank">源码</a>
+                    </div>
                 </div>
                 
 
-            </div>
+            </div><br><br>
             <h2>开源项目</h2>
             <div class="pikachu">
                 <div class="show">
                     <div>
-                        可爱皮卡丘-纯CSS绘制皮卡丘
-                        <a href="https://lgm11.github.io/pikachu-static/src/index.html" target="_blank">演示</a>
-                        <a href="https://lgm11.github.io/pikachu-dynamic/dist/index.html" target="_blank">演示</a>
+                        <h4>可爱皮卡丘</h4>
+                        <div class="link">
+                            <a href="https://lgm11.github.io/pikachu-static/src/index.html" target="_blank">静态演示</a>
+                            <a href="https://lgm11.github.io/pikachu-dynamic/dist/index.html" target="_blank">动态演示</a>
+                            <a href="https://github.com/lgm11/pikachu-static" target="_blank">静态源码</a>
+                            <a href="https://github.com/lgm11/pikachu-dynamic" target="_blank">动态源码</a>
+                        </div>
                     </div>
                 </div>
+                <br>
+                <img src="./image/pikachu.png" alt="" style="max-width: 100%;max-height: 100%;">
                 <section>
                     <br>
-                    使用伪元素、CSS Animation、绝对、相对定位的项目
+                    
+                    纯CSS绘制皮卡丘：使用伪元素、CSS Animation、绝对、相对定位的项目
                 </section>
-            </div>
+            </div><br><br>
             <div class="canvas">
                 <div class="show">
                     <h4>简易画板</h4>
-                    <a href="https://lgm11.github.io/canvas-demo-1/index.html" target="_blank">演示</a>
-                    <a href="https://github.com/lgm11/canvas-demo-1" target="_blank">源码</a>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/canvas-demo-1/index.html" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/canvas-demo-1" target="_blank">源码</a>
+                    </div>
                 </div>
-                
+                <br>
+                <img src="./image/canvas.png" alt="" style="max-width: 100%;max-height: 100%;">
                 <section>
                     使用HTML5的Canvas标签，实现的画板项目，对移动端进行兼容。能在桌面端和移动端使用<br><br>
                     <strong>技术栈：</strong>
                 JavaScript + HTML5 + Canvas + CSS3
                 </section>
-            </div>
+            </div><br><br>
             <div class="nav">
-                <h4>前端导航</h4>
+                <div class="show">
+                    <h4>简约导航</h4>
+                    <div class="link">
+                        <a href="https://lgm11.github.io/nav-1/dist/index.html" target="_blank">演示</a>
+                        <a href="https://github.com/lgm11/nav-1" target="_blank">源码</a>
+                    </div>
+                </div>
+                <br>
+                <img src="./image/nav.png" alt="" style="max-width: 100%;max-height: 100%;">
                 <section>
                     项目使用原生JavaScript，实现可自定义的导航网站
                 <br><br>
@@ -277,7 +309,7 @@
                 JavaScript + HTML5 + LocalStorage
                 </section>
                 
-            </div>
+            </div><br>
             <h2>关于我</h2>
             <ul>
                 <li>熟悉页面制作技巧，能将设计稿完美还原</li>
